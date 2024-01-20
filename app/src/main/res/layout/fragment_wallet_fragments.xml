@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExtraFragments.WalletFragments">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/back_wallet"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/ic_back"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:id="@+id/walletTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Diamonds"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/myRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="My Record"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Remaining"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/diamond"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:id="@+id/userDiamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="260"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Exchange"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="Please select the way to exchange"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/grey" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:padding="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/coin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img55"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/coin"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:text="400"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/llOneThousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/stroke_primary"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/diamond"
+                        android:contentDescription="@string/description" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="1000"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/coinTwo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img55"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/coinTwo"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:text="2000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/llTwoThousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/stroke_primary"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/diamond"
+                        android:contentDescription="@string/description" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="5000"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/coinThree"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img55"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/coinThree"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:text="4000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/llThreeThousand"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/stroke_primary"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/diamond"
+                        android:contentDescription="@string/description" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="10000"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_20sdp">
+
+                <ImageView
+                    android:id="@+id/coinFour"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/img55"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/coinFour"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:text="40000"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/llFourThousand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/stroke_primary"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:paddingVertical="@dimen/_5sdp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/diamond"
+                        android:contentDescription="@string/description" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="100000"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!--     <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="20dp"
+                     android:layout_marginTop="20dp"
+                     android:orientation="horizontal">
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="100dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1"
+                         android:layout_marginRight="10dp"
+                         android:background="@drawable/rect_strock_8">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="30dp"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="24dp"
+                                 android:layout_height="24dp"
+                                 android:background="@drawable/img55"
+                                 android:contentDescription="@string/description"
+                                 />
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="295"
+                                 android:textSize="14sp"
+                                 android:fontFamily="sans-serif-medium"
+                                 android:textColor="@color/black"
+                                 android:layout_marginStart="10dp"
+                                 android:layout_gravity="center_vertical"
+                                 />
+                         </LinearLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="$ 3.50"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="5dp"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:fontFamily="sans-serif-medium"
+                             />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="100dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1"
+                         android:layout_marginLeft="10dp"
+                         android:background="@drawable/rect_strock_8">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="30dp"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="24dp"
+                                 android:layout_height="24dp"
+                                 android:background="@drawable/img55"
+                                 android:contentDescription="@string/description"
+                                 />
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="14sp"
+                                 android:text="1500"
+                                 android:fontFamily="sans-serif-medium"
+                                 android:textColor="@color/black"
+                                 android:layout_marginStart="10dp"
+                                 android:layout_gravity="center_vertical"
+                                 />
+                         </LinearLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="$16.90"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="5dp"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:fontFamily="sans-serif-medium"
+                             />
+
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="20dp"
+                     android:layout_marginTop="20dp"
+                     android:orientation="horizontal">
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="100dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1"
+                         android:layout_marginRight="10dp"
+                         android:background="@drawable/rect_strock_8">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="30dp"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="24dp"
+                                 android:layout_height="24dp"
+                                 android:background="@drawable/img55"
+                                 android:contentDescription="@string/description"
+                                 />
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="3010"
+                                 android:textSize="14sp"
+                                 android:fontFamily="sans-serif-medium"
+                                 android:textColor="@color/black"
+                                 android:layout_marginStart="10dp"
+                                 android:layout_gravity="center_vertical"
+                                 />
+                         </LinearLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="$ 34.90"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="5dp"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:fontFamily="sans-serif-medium"
+                             />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="100dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1"
+                         android:layout_marginLeft="10dp"
+                         android:background="@drawable/rect_strock_8">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="30dp"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="24dp"
+                                 android:layout_height="24dp"
+                                 android:background="@drawable/img55"
+                                 android:contentDescription="@string/description"
+                                 />
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="14sp"
+                                 android:text="7250"
+                                 android:fontFamily="sans-serif-medium"
+                                 android:textColor="@color/black"
+                                 android:layout_marginStart="10dp"
+                                 android:layout_gravity="center_vertical"
+                                 />
+                         </LinearLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="$83.90"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="5dp"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:fontFamily="sans-serif-medium"
+                             />
+
+                     </LinearLayout>
+
+
+
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginHorizontal="20dp"
+                     android:layout_marginTop="20dp"
+                     android:orientation="horizontal">
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="100dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1"
+                         android:layout_marginRight="10dp"
+                         android:background="@drawable/rect_strock_8">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="30dp"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="24dp"
+                                 android:layout_height="24dp"
+                                 android:background="@drawable/img55"
+                                 android:contentDescription="@string/description"
+                                 />
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="13,050"
+                                 android:textSize="14sp"
+                                 android:fontFamily="sans-serif-medium"
+                                 android:textColor="@color/black"
+                                 android:layout_marginStart="10dp"
+                                 android:layout_gravity="center_vertical"
+                                 />
+                         </LinearLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="$ 145.50"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="5dp"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:fontFamily="sans-serif-medium"
+                             />
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="100dp"
+                         android:orientation="vertical"
+                         android:layout_weight="1"
+                         android:layout_marginLeft="10dp"
+                         android:background="@drawable/rect_strock_8">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="30dp"
+                             android:orientation="horizontal">
+
+                             <ImageView
+                                 android:layout_width="24dp"
+                                 android:layout_height="24dp"
+                                 android:background="@drawable/img55"
+                                 android:contentDescription="@string/description"
+                                 />
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="14sp"
+                                 android:text="30,455"
+                                 android:fontFamily="sans-serif-medium"
+                                 android:textColor="@color/black"
+                                 android:layout_marginStart="10dp"
+                                 android:layout_gravity="center_vertical"
+                                 />
+                         </LinearLayout>
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="$349.90"
+                             android:layout_gravity="center_horizontal"
+                             android:layout_marginTop="5dp"
+                             android:textSize="16sp"
+                             android:textColor="@color/black"
+                             android:fontFamily="sans-serif-medium"
+                             />
+
+                     </LinearLayout>
+
+                 </LinearLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Please contact customer service for any problem"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/round_corners_26dp"
+                android:elevation="2dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/walletRL"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/full_round_corners">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/img33"
+                        android:contentDescription="@string/description" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toRightOf="@+id/walletRL"
+                    android:text="Watch Rewarded Video ads and get 5"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity.Profile.VIP.Fragment_Count">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="800dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+            <RelativeLayout
+                android:id="@+id/info_profile"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_Vip_profile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+
+                    android:src="@drawable/user_7" />
+                <com.opensource.svgaplayer.SVGAImageView
+                    android:id="@+id/profieFrame"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+
+                    android:elevation="12dp"
+                    android:scaleType="fitCenter"
+
+                    app:antiAlias="true"
+                    />
+
+
+                <TextView
+                    android:id="@+id/vip_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/user_Vip_profile"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Vip_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vip_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/user_Vip_profile"
+                    android:textColor="@color/grey"
+                    android:text="VIP not opened"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/badgeImg"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/info_profile" />
+
+            <RelativeLayout
+                android:id="@+id/cost_Lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/badgeImg"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cost_background">
+
+                <LinearLayout
+                    android:id="@+id/dimond_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/dimondCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/diamond" />
+
+                            <TextView
+                                android:id="@+id/cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="200000"
+                                android:textColor="#eec977"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dimondCount"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="5dp"
+                            android:text="First month cost"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dimond_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dimond_lay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="12sp">
+
+                    <LinearLayout
+                        android:id="@+id/free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/free_back">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/dimondCount"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="10dp"
+                            android:text="FREE"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/white"
+
+                        android:layout_toRightOf="@id/free"
+                        android:text="if you choose to renew going forward, you only need"
+                        android:textSize="11.5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textTop"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:text="@string/_50000_diamonds"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/service_Agr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cost_Lay"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:text="VIP Service Agreement"
+                android:textSize="16sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_below="@+id/service_Agr"
+                android:layout_marginBottom="20dp"
+
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/vip_inc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/service_Agr"
+                    layout="@layout/vip_aggrement"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buy_btn"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="Exclusive privilege"
+                    android:textSize="16sp" />
+
+
+
+                <include
+                    android:id="@+id/privilege_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    layout="@layout/lay_privileges"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/vipBUY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bgg"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:text="Purchase"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+</RelativeLayout>

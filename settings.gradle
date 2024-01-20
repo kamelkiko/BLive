@@ -1,0 +1,3 @@
+
+rootProject.name = "B Live"
+include ':app'

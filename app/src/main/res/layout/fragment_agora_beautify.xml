@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    android:background="#45000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_beauty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple"
+            
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="Beautify"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            
+            android:text="Contrast"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <SeekBar
+            android:visibility="visible"
+            android:id="@+id/seekbar_contrast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:max="10"
+            android:progressBackgroundTint="@color/white"
+            android:min="0"
+            android:progress="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            
+            android:text="Brightness"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <SeekBar
+            android:id="@+id/seekbar_lightening_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:max="10"
+            android:progressBackgroundTint="@color/white"
+            android:min="0"
+            android:progress="7" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            
+            android:text="Smoothness"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <SeekBar
+            android:id="@+id/seekbar_smoothness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:max="10"
+            android:min="0"
+            android:progressBackgroundTint="@color/white"
+            android:progress="5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Redness"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <SeekBar
+            android:id="@+id/seekbar_redness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:max="10"
+            android:min="0"
+            android:progressBackgroundTint="@color/white"
+            android:progress="1" />
+
+        <Switch
+            android:visibility="visible"
+            android:id="@+id/switch_enbale_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:text="Apply Filters"
+            android:textSize="@dimen/sp_14" />
+
+        <Button
+            android:id="@+id/btn_set_beauty"
+            android:layout_width="@dimen/dp_130"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp_30"
+            android:background="@drawable/btn_bg"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:background="@drawable/round_corner_bg"
+    android:layout_height="200dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select payment Method"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <RadioGroup
+            android:id="@+id/radioGrp2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/cash_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:checked="true"
+                android:layout_weight="1"
+                android:textSize="14dp"
+                android:buttonTint="@color/app_pink_color"
+                android:text="Cash"
+                />
+            <RadioButton
+                android:id="@+id/bank_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:buttonTint="@color/app_pink_color"
+                android:textSize="14dp"
+                android:text="Bank"
+                />
+            <RadioButton
+                android:id="@+id/paypal_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:checked="false"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:buttonTint="@color/app_pink_color"
+                android:textSize="14dp"
+                android:text="Paypal"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

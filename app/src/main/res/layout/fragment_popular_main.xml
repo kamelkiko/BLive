@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity.HomeMainCategory.Popular.PopularMainFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:background="@drawable/bg_gradient"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/user_7"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/app_pink_color"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.androidkun.xtablayout.XTabLayout
+                android:id="@+id/tabLayout_popular"
+                style="@style/MyTabLayoutTextAppearance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/imgSearch"
+                app:xTabIndicatorColor="@color/white"
+                app:xTabIndicatorHeight="3dp"
+                app:xTabIndicatorWidth="7dp"
+                app:xTabMode="scrollable"
+                app:xTabTextColor="#43000000"
+                app:xTabSelectedTextColor="@color/white"
+                app:xTabSelectedTextSize="22sp"
+                app:xTabTextAppearance="@style/CustomTextAppearanceTab"
+                app:xTabTextBold="true"
+                app:xTabTextSelectedBold="true"
+                app:xTabTextSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/profileTopGiftersRL"
+                android:background="@drawable/ic_search_1"
+                android:backgroundTint="@color/white" />
+            <ImageView
+                android:id="@+id/profileTopGiftersRL"
+                android:layout_width="30dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/trophy" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/view_color"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager_popular"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

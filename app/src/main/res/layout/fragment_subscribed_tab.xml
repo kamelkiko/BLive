@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExtraFragments.SubscribedTab">
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize">
+                    <ImageView
+                        android:id="@+id/backImg_subcriptions"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/ic_baseline_arrow_back_24"
+                        android:contentDescription="@string/description"
+                        />
+
+                    <TextView
+                        android:id="@+id/topGiftersTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:text="My Subscriptions"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="sans-serif-medium"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="20dp"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/background_four"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:text="Jass"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="sans-serif-medium"
+                            android:drawableLeft="@drawable/ic_heart__5_"
+                            android:drawableRight="@drawable/ic_heart__5_"
+                            android:drawableTint="#DCDD1818"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4 days ago,9:20 AM"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:textSize="14sp"
+                    android:text="@string/publictx"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="12dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/img"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/description"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="20dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/background_four"
+                            android:contentDescription="@string/description"/>
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:background="@drawable/ic_heart__5_"
+                            android:backgroundTint="#DCDD1818"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="68 people like this"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:textSize="14sp"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey"
+                    android:layout_marginVertical="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/Llayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ic_heart__5_"
+                            android:backgroundTint="@color/grey"
+                            android:contentDescription="@string/description"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="68"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Llayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_toRightOf="@+id/Llayout1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ic_comment__1___1_"
+                            android:backgroundTint="@color/grey"
+                            android:contentDescription="@string/description"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="11"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@+id/Llayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ic_arrow__1_"
+                            android:backgroundTint="@color/grey"
+                            android:contentDescription="@string/description"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="1"
+                            android:layout_gravity="center_horizontal"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/publicGiftImg"
+                        android:layout_width="20sp"
+                        android:layout_height="20sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ic_giftbox__1_"
+                        android:contentDescription="@string/description"/>
+
+                    <View
+                        android:id="@+id/publicView8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/grey"
+                        android:layout_below="@+id/Llayout2"
+                        android:layout_marginTop="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/full_round_corners"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/publicGiftImg"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/app_pink_color"
+                        android:elevation="4dp"
+                        android:layout_marginRight="30dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:background="@drawable/ic_plus__4_"
+                            android:backgroundTint="@color/white"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/description"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/publicView8dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="20dp"
+                            android:contentDescription="@string/description"
+                            android:src="@drawable/background_four"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:text="Jass"
+                                android:drawablePadding="10dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="sans-serif-medium"
+                                android:drawableLeft="@drawable/ic_heart__5_"
+                                android:drawableTint="#DCDD1818"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4 days ago,9:20 AM"
+                                android:textSize="12sp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

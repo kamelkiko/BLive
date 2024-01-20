@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:background="@drawable/round_corner_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:gravity="center"
+        android:text="Whose you want to send Gift?"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!--    <TextView-->
+    <!--        android:gravity="center"-->
+    <!--        android:layout_marginLeft="20dp"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:id="@+id/tv_text"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="User Name "-->
+    <!--        android:textSize="16sp"/>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/list_host_list"
+        tools:itemCount="2"
+        android:id="@+id/rv_hosts"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirmBooking"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/button_bg"
+            android:text="Accept"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_editBooking"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/button_bg"
+            android:text="Reject"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/button_bg"
+        android:text="Back"
+        android:textColor="@color/white" />
+
+</LinearLayout>

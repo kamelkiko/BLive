@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity.Profile.Family.FamilyprofileFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="@dimen/_5sdp"
+        android:background="@drawable/pink_simple_design">
+
+        <ImageView
+            android:id="@id/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:rotation="180"
+            android:src="@drawable/next"
+            app:tint="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan Club"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout2">
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/Scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/rel"
+                                android:layout_width="match_parent"
+                                android:layout_height="270dp">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginBottom="@dimen/_35sdp"
+                                    app:cardCornerRadius="250dp">
+
+                                    <ImageView
+                                        android:id="@+id/familyBatchImg"
+                                        android:layout_width="@dimen/_120sdp"
+                                        android:layout_height="@dimen/_120sdp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/girl" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:id="@+id/familyBatchFamilyName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="SINGH FAMILY"
+                                    android:textColor="@color/app_pink_color"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="180dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/pink_simple_design"
+                                        android:scaleType="centerCrop" />
+
+                                    <ImageView
+                                        android:id="@+id/familyBatchBackImg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="10dp"
+                                        android:layout_marginVertical="10dp" />
+
+                                    <ImageView
+                                        android:id="@+id/leaveFamilyImg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginVertical="10dp"
+                                        android:layout_marginEnd="10dp" />
+
+
+                                    <ImageView
+                                        android:id="@+id/img"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="40dp"
+                                        android:src="@drawable/adminring"
+                                        android:visibility="gone" />
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:layout_marginTop="@dimen/_30sdp"
+                                android:text="Family Notice"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/FamilyDescriptionTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="10dp"
+                                android:layout_marginVertical="10dp"
+                                android:text="Welcome all waka users"
+                                android:textColor="@color/grey"
+                                android:textSize="16sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/familyMemberRL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/inviteIV"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="10dp"
+                                    android:padding="@dimen/_5sdp"
+                                    android:src="@drawable/next" />
+
+                                <TextView
+                                    android:id="@+id/familyMembersCountTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:layout_marginVertical="10dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Family Members 251/300"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+
+                            </RelativeLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/familyMemberRv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="5dp"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                tools:listitem="@layout/invite_list" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/joinFamilyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/greeni"
+            android:text="Join"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

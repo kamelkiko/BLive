@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "725936838172",
+    "project_id": "kawilive-24478",
+    "storage_bucket": "kawilive-24478.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725936838172:android:89feaa76e7670047b8f1d9",
+        "android_client_info": {
+          "package_name": "com.kawi.live"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "725936838172-13jfkl7gqdrvfml1avu92pbnr78eqfgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kawi.live",
+            "certificate_hash": "72c73e1a4134ea7e4a89a4356aeff6fc8faa8f37"
+          }
+        },
+        {
+          "client_id": "725936838172-vv7tarf6c1bega8f0ensisd495d61a4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kawi.live",
+            "certificate_hash": "496f671d1a411c1d74b6ba43c18bbadf56c68ea9"
+          }
+        },
+        {
+          "client_id": "725936838172-276gk3b8r269mdqjch6ecuie7t45rm8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCipLioyE8MYGgXo7CttT6WLIgru73cMYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "725936838172-276gk3b8r269mdqjch6ecuie7t45rm8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

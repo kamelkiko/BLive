@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExtraFragments.ApplyForHost">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/imageBack_applyHost"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:contentDescription="@string/description"
+            android:rotation="180" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply For Host"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/imageBack_applyHost"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"/>
+    </RelativeLayout>
+
+        <EditText
+            android:id="@+id/get_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="*Enter you real name"
+            android:textSize="14sp"
+            android:padding="@dimen/dp_5"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+        <EditText
+            android:id="@+id/get_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_5"
+            android:background="@android:color/transparent"
+            android:hint="*Enter your mobile/Whatsapp number"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="*Select your country/region"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+            <Spinner
+                android:id="@+id/spinner_country_select"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <EditText
+            android:id="@+id/get_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your address(optional)"
+            android:textSize="14sp"
+            android:padding="@dimen/dp_5"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <EditText
+            android:id="@+id/get_email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="*Enter your email address"
+            android:textSize="14sp"
+            android:padding="@dimen/dp_5"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <EditText
+            android:id="@+id/get_national_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="*Enter your national ID number"
+            android:textSize="14sp"
+            android:padding="@dimen/dp_5"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application will be rejected if you upload invalid ID#"
+            android:textSize="14sp"
+            android:textColor="@color/app_pink_color"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/dot_grey_strock">
+
+
+            <ImageView
+                android:id="@+id/imageNationaliId"
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_2"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/dp_200"/>
+            <LinearLayout
+                android:id="@+id/clickImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="19dp"
+                    android:layout_height="17dp"
+                    android:background="@drawable/ic_plus__4_"
+                    android:backgroundTint="@color/app_pink_color"
+                    android:contentDescription="@string/description" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_pink_color"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/click_to_upload_national_id_image"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose how you want to be paid"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Select payment recival type"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGrp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/self_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/app_pink_color"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Self"
+                    android:textSize="14dp" />
+
+                <RadioButton
+                    android:id="@+id/viaAgency_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/app_pink_color"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:text="Via Agency"
+                    android:textSize="14dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Select payment Method"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            >
+            <RadioGroup
+                android:id="@+id/radioGrp2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/cash_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:buttonTint="@color/app_pink_color"
+                    android:text="Cash"
+                    />
+                <RadioButton
+                    android:id="@+id/bank_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/app_pink_color"
+                    android:textSize="14dp"
+                    android:text="Bank"
+                    />
+                <RadioButton
+                    android:id="@+id/paypal_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/app_pink_color"
+                    android:textSize="14dp"
+                    android:text="Paypal"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_pink_color"
+            android:textSize="14sp"
+            android:text="No information required"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="I want to join Nico agency"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"/>
+         </LinearLayout>
+        <EditText
+            android:id="@+id/get_agency_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="*Enter Agency ID"
+            android:padding="@dimen/dp_5"
+            android:background="@android:color/transparent"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apply_for_host_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_corners_26dp"
+            android:layout_marginHorizontal="40dp"
+            android:backgroundTint="@color/app_pink_color"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:elevation="2dp"
+            android:textSize="18dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

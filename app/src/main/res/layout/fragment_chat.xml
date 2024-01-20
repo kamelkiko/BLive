@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExtraFragments.ChatFragment">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        >
+        <RelativeLayout
+            android:id="@+id/rlLeaveChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/app_pink_color"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:elevation="2dp"
+            >
+            <RelativeLayout
+                android:id="@+id/topHeaderRL"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/full_round_corners"
+                android:layout_margin="4dp">
+
+                <ImageView
+                    android:id="@+id/leave_chat"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_close__2_"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="@color/app_pink_color"
+                    android:contentDescription="@string/description"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="Leave"
+                android:layout_toRightOf="@+id/topHeaderRL"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/chatMsgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESSAGE"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/add"
+        android:layout_below="@id/action_bar"
+        android:layout_width="match_parent"
+        android:background="@color/app_pink_color"
+        android:layout_marginTop="10dp"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow so you won't miss the moment"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_corners_26dp"
+            android:paddingVertical="4dp"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="10dp"
+            android:elevation="2dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Follow"
+                android:textColor="@color/app_pink_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rr_message"
+        android:layout_below="@+id/add"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/message_list" />
+
+
+    <RelativeLayout
+        android:id="@+id/rr_message"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="?actionBarSize">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+        <ImageView
+            android:id="@+id/chatCameraImg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_camera__2_"
+            android:backgroundTint="@color/app_pink_color"
+            android:contentDescription="@string/description" />
+
+        <ImageView
+            android:id="@+id/attachImg"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/ic_attach"
+            android:backgroundTint="@color/app_pink_color"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/chatCameraImg"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/description"/>
+
+        <EditText
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="2dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/send"
+            android:layout_toEndOf="@+id/attachImg"
+            android:background="@color/white"
+            android:hint="Type message..."
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/send"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/full_round_corners"
+            android:backgroundTint="@color/app_pink_color"
+            android:elevation="2dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_sent_mail__1_"
+                android:backgroundTint="@color/white" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

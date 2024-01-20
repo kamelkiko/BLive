@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/topbar_private_messages"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:id="@+id/close_img"
+            android:src="@drawable/close_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Private Message"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_main"
+        android:visibility="visible"
+        android:layout_below="@id/topbar_private_messages"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_private"
+            tools:listitem="@layout/list_private_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@id/relativeMsg"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <RelativeLayout
+            android:id="@+id/relativeMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/dp_15">
+
+            <LinearLayout
+                android:id="@+id/ll_messege_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ll_message_share_gift"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edit_text_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/trans_bg_black"
+                    android:backgroundTint="@color/transdark"
+                    android:drawableTint="@color/white"
+                    android:hint="Type private mesage.."
+                    android:imeOptions="actionSend"
+                    android:maxLines="1"
+                    android:padding="@dimen/dp_10"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_message_share_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_5"
+                    android:background="@drawable/trans_bg"
+                    android:backgroundTint="@color/transdark"
+                    android:padding="@dimen/dp_7"
+                    android:src="@drawable/ic_speech_bubble"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_35"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_5"
+                    android:background="@drawable/trans_bg"
+                    android:backgroundTint="@color/transdark"
+                    android:padding="@dimen/dp_7"
+                    android:id="@+id/img_send"
+                    android:src="@drawable/send2"
+                    android:tint="@color/black" />
+
+
+            </LinearLayout>
+
+            <!-- <ImageView-->
+            <!-- android:id="@+id/img_send"-->
+            <!-- android:layout_width="@dimen/dp_40"-->
+            <!-- android:layout_height="@dimen/dp_40"-->
+            <!-- android:layout_alignParentRight="true"-->
+            <!-- android:layout_centerVertical="true"-->
+            <!-- android:background="@drawable/trans_bg"-->
+            <!-- android:padding="@dimen/dp_8"-->
+            <!-- android:src="@drawable/send"-->
+            <!-- android:tint="@color/white"-->
+            <!-- android:visibility="gone" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

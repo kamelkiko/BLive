@@ -1,0 +1,40 @@
+package com.expert.blive.SpinWheel.SkUtil;
+
+public class userManager {
+    public static int AdsPosible = 0;
+    public static int AvtarBenner = 0;
+    public static int CoinStoreBenner = 0;
+    public static String Fbanner1 = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static String Fbanner2 = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static int FlipCardBenner = 0;
+    public static int FlipCardBennerDash = 0;
+    public static int HeartBenner = 0;
+    public static int HourlyTimerInDashboard = 0;
+    public static String IntPlacement = "video";
+    public static String InterstitialAT1 = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static String InterstitialAT2 = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static int MenuBenner = 0;
+    public static String NativeAds1 = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static String NativeAds2 = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static int ProfileBenner = 0;
+    public static int ScratchCardBenner = 0;
+    public static int ScratchCardBennerDash = 0;
+    public static int SlotMachineBenner = 0;
+    public static int SlotMachineBennerDash = 0;
+    public static int SpinnerBenner = 0;
+    public static int SpinnerBennerDash = 0;
+    public static Boolean StopWinnerVideo = true;
+    public static int UpDownGameBenner = 0;
+    public static int UpDownGameBennerDash = 0;
+    public static String VidPlacementId = "rewardedVideo";
+    public static String VideoArs = "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID";
+    public static int VideoTimerInDashboard = 0;
+    public static int VideoTimerInWinner = 0;
+    public static int WalletBenner = 0;
+    public static int adsNetWork1 = 0;
+    public static int adsNetWork2 = 0;
+    public static int moreApp = 0;
+    public static Boolean showAdsTimer = true;
+    public static Boolean testMode = false;
+    public static String unityGameID = "3846067";
+}

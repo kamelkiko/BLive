@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="30dp"
+    android:layout_marginHorizontal="20sp"
+    android:background="@drawable/white_drawable_design"
+    >
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:buttonTint="@color/app_pink_color"
+            android:text="Male"
+            />
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:buttonTint="@color/app_pink_color"
+            android:textSize="14dp"
+            android:text="Female"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/done_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_dsign"
+        android:layout_below="@id/radioGrp"
+        android:text="Done"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>

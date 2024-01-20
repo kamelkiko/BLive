@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Kawi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="terms">Agree to our <b>Terms</b> and <b>Data Policy</b></string>
+    <string name="description"></string>
+    <string name="_260">260</string>
+    <string name="publictx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </string>
+    <string name="omninos">Omninos</string>
+
+    <string-array name="gift_names">
+        <item>Bell</item>
+        <item>Ice Cream</item>
+        <item>Wine</item>
+        <item>Cake</item>
+        <item>Ring</item>
+        <item>Watch</item>
+        <item>Diamond</item>
+        <item>Rocket</item>
+    </string-array>
+
+
+    <integer-array name="gift_values">
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+    </integer-array>
+    <string-array name="spinnercombo">
+        <item>1</item>
+        <item>10</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+    <string name="_04_04am">04:04AM</string>
+    <string name="hey_how_s_it_going">Hey!How\'s it going?</string>
+    <string name="find_contacts_friends">Find Contacts Friends</string>
+
+    //Official Talent Instruction
+    <string name="offialtx1">What you need to become an Official Talent</string>
+    <string name="offialtx2">Official Talent Requirements</string>
+
+    <string name="resend"><b>Resend</b></string>
+    <string name="signup">Don\'t have an account?</string>
+    <string name="policy">By signing you Agree to our</string>
+    <string name="num">Enter your Phone number</string>
+    <string name="otp">Please enter the 4 digit code sent to +91 9888898888 through SMS</string>
+    <string name="policyy">"By continuing you’re indicating that you accept"</string>
+    <string name="naam">Your account is ready to use. You will be redirected to the home page in a few seconds.</string>
+    <string name="naa">\@Ruhi_007</string>
+    <string name="text">Can you sanp ? p.s chris</string>
+    <string name="text3">but share cant #foryou</string>
+    <string name="text4">Original sound-ourfire</string>
+    <string name="Male">Male</string>b
+    <string name="offialtx3">If you have earned at atleast 2000.000 gems,then you can apply to be an official talent.</string>
+    <string name="offialtx4">If you have an Agency ID and agency you would like to join,you can apply with the Agency Id and join int and Agency right away.</string>
+    <string name="offialtx5">Why should you become an official talent?</string>
+    <string name="offialtx6">You can earn real money from Streaming. You will receive both an allowance and money from the gems you earn!</string>
+    <string name="offialtx7">When you broadcast,your stream will appear on the popular category on the homepage.This way the most users will see you.</string>
+    <string name="offialtx8">Special placement in the Discovery section of the app and a New Star ribbon on your broadcast. We want everyone to know how special you are!</string>
+    <string name="offialtx9">Receive training,support and other perks from the team at  and our crew of trusted agencies!</string>
+    <string name="offialtx11">B Live does not allow streamer under 15 to stream. If you are under age, your application will not be accepted.Please after you turn 18 years old.</string>
+    <string name="i_have_an_agency_id"><u>I have an Agency ID</u></string>
+    <string name="click_to_upload_national_id_image"><u>Click to upload national ID image</u></string>
+    <string name="click_to_upload_the_image"><u>Click to upload the image</u></string>
+    <string name="apply_to_be_an_official_talent"><u>Apply to be an Official Talent</u></string>
+
+
+    <string name="path_search">
+       M141,17 A9,9 0 1,1 142,16 L149,23
+    </string>
+
+
+    <string name="bit_rate_value_with_unit">%d kbps</string>
+    <string name="frame_rate_value_with_unit">%d fps</string>
+
+    <string name="just_160_diamonds_to_unlock_all_my_private_photos">Just 160 diamonds to unlock all my private photos</string>
+    <string name="msg_connection_error">Connection error, please check the network settings or make sure channel name/access token are valid</string>
+
+
+    <string name="label_title_resolution">Resolution</string>
+    <string name="label_title_frame_rate">Frame Rate(fps)</string>
+
+    <string-array name="string_array_resolutions">
+        <item>160x120</item>
+        // 120P
+        <item>320x180</item>
+        // 180P
+        <item>320x240</item>
+        // 240P the default one
+        <item>640x360</item>
+        // 360P
+        <item>640x480</item>
+        // 480P
+        <item>1280x720</item>
+        // 720P
+    </string-array>
+
+    <string-array name="string_array_frame_rate">
+        <item>1</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+        // the default one
+        <item>24</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="string_array_bit_rate">
+        <item>80</item>
+        // 120P
+        <item>160</item>
+        // 180P
+        <item>200</item>
+        // 240P
+        <item>400</item>
+        // 360P
+        <item>500</item>
+        // 480P
+        <item>1000</item>
+
+        // 720P
+    </string-array>
+    <string name="agora_app_id">0cc90d52f6104f709e22e02913814689</string>
+    <string name="agora_access_token">006590f014dc2f94a6b99506a6c34e8431cIADBi1wjgLm3TcZOve8nyeQhrLbOBrUGbxqfL8Hbm/TXRQAlDMwAAAAAEAAdwi3Rz0Q+YAEAAQDORD5g</string>
+    <string name="start_multilive">Start MultiLive</string>
+    <string name="follow_so_you_don_t_miss_the_moment">Follow so you won\'t miss the moment.</string>
+    <string name="start_live">Start LIve</string>
+    <string name="dummy_text">Dummy Text</string>
+    <string name="name">NAme</string>
+    <string name="sent_a_gift">Sent a Gift</string>
+    <string name="pk">Pk</string>
+    <string name="_0">0</string>
+    <string name="wants_to_join_with_you_in_live_session">Wants To Join With You In Live Session</string>
+    <string name="likes">Likes</string>
+    <string name="no_videos">No Video</string>
+    <string name="private_account">Private Account</string>
+    <string name="follow">follow</string>
+    <string name="videos">videos</string>
+    <string name="following">following</string>
+    <string name="followers">followers</string>
+    <string name="zero">zero</string>
+    <string name="check_my_vip">Check My VIP</string>
+    <string name="_1600_diamonds"><font color='#eec977'>30000 </font>diamonds every month and will receive <font color='#eec977'>30000 </font>noble diamonds.</string>
+    <string name="bio">bio</string>
+    <string name="hi_upkar_how_are_you">hi_upkar_how_are_you</string>
+    <string name="guess_what_iam_going_to_do_today">guess_what_iam_going_to_do_today</string>
+    <string name="no_live_users">No Live Users</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="post">Post</string>
+    <string name="follower">Follower</string>
+    <string name="messages">Message</string>
+    <string name="about_status">About status</string>
+    <string name="live_history">My Live Stream</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="unblock">Unblock</string>
+    <string name="popular_games">Popular Games</string>
+    <string name="lucky_spin">Lucky Spin</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="today_9_30_pm">Today 9:30 PM</string>
+    <string name="himanshu">Himanshu</string>
+
+    <string name="profile">Profile</string>
+    <string name="badges">Badges</string>
+    <string name="facebook_app_id">332916475720859</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">6d287b4d7941bc6bc553330adb481ced</string>
+    <string name="kick_out_user">kick out user</string>
+    <string name="add_to_black_list">Block User</string>
+    <string name="set_as_admin">set as admin</string>
+    <string name="mute">mute</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="this_month">This Month</string>
+    <string name="video_live_duration">Live Duration</string>
+    <string name="monthly_earning_records"><u>monthly Earning Records</u></string>
+    <string name="sure_to_buy_this_if_use_this_frame_you_ll_get_more_attention_in_the_live_room">Not enough coins, want to recharge.</string>
+    <string name="my_bag">My Bag</string>
+    <string name="stor">B Live Store</string>
+    <string name="store">B Live Store</string>
+    <string name="purchase">Purchase</string>
+    <string name="host">Host</string>
+    <string name="agency">Agency</string>
+    <string name="_250000_diamonds"><font color='#eec977'>250000 </font>diamonds every month and will receive <font color='#eec977'>250000 </font>noble diamonds.</string>
+    <string name="_50000_diamonds"><font color='#eec977'>70000 </font>diamonds every month and will receive <font color='#eec977'>70000 </font>noble diamonds.</string>
+    <string name="_450000_diamonds"><font color='#eec977'>450000 </font>diamonds every month and will receive <font color='#eec977'>450000 </font>noble diamonds.</string>
+    <string name="_700000_diamonds"><font color='#eec977'>700000 </font>diamonds every month and will receive <font color='#eec977'>700000 </font>noble diamonds.</string>
+    <string name="DailyRewards">Daily Rewards</string>
+    <string name="excitedrewards">Get daily excited rewards</string>
+    <string name="excitedreward">You’ve just earned\na new reward</string>
+    <string name="Claimrewards">Claim</string>
+    <string name="reward">My Reword</string>
+    <string name="InvisibleVisitor">Invisible Visitor</string>
+    <string name="Mysterious">Mysterious Man</string>
+
+
+</resources>

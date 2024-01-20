@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExtraFragments.PublicFragment">
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:id="@+id/tabRela"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="@color/white">
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/profile_image"
+                  android:layout_width="45dp"
+                  android:layout_height="45dp"
+                  android:layout_alignParentStart="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:src="@drawable/background_image_three"
+                  app:civ_border_color="@color/app_pink_color"
+                  app:civ_border_width="1dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="10dp" />
+
+              <com.google.android.material.tabs.TabLayout
+                  android:id="@+id/publicTablayout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_toRightOf="@+id/profile_image"
+                  android:background="@color/white"
+                  app:tabGravity="center"
+                  style="@style/MyTabLayoutTextAppearance"
+                  android:layout_toLeftOf="@+id/searchImg"
+                  app:tabIndicatorColor="@color/app_pink_color"
+                  app:tabMode="scrollable"
+                  app:tabIndicatorFullWidth="false"
+                  app:tabSelectedTextColor="@color/app_pink_color"
+                  android:layout_marginRight="20dp" />
+
+              <ImageView
+                  android:id="@+id/crownImg"
+                  android:layout_width="24dp"
+                  android:layout_height="24dp"
+                  android:layout_centerVertical="true"
+                  android:background="@drawable/ic_crown__1_"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginRight="10dp"
+                  android:layout_alignParentRight="true" />
+              <ImageView
+                  android:id="@+id/searchImg"
+                  android:layout_width="18dp"
+                  android:layout_height="18dp"
+                  android:layout_centerVertical="true"
+                  android:backgroundTint="@color/black"
+                  android:background="@drawable/ic_magnifying_glass__1_"
+                  android:layout_toLeftOf="@+id/crownImg"
+                  android:layout_marginRight="10dp"
+                  />
+
+          </RelativeLayout>
+
+
+          <androidx.viewpager.widget.ViewPager
+              android:id="@+id/publicViewPager"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              />
+
+
+
+      </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <!--            <androidx.recyclerview.widget.RecyclerView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                tools:listitem="@layout/cout_image"-->
+    <!--                tools:itemCount="4"-->
+    <!--                app:spanCount="2"-->
+    <!--                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"-->
+    <!--                android:id="@+id/recyclerFour"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="5dp"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_120"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+
+            android:background="@drawable/round_corners_26dp"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/dp_40"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

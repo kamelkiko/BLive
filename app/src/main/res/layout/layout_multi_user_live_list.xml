@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.opensource.svgaplayer.SVGAImageView
+        android:id="@+id/profieFrame"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:elevation="12dp"
+        android:scaleType="fitCenter"
+        app:antiAlias="true" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieGift"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loader" />
+
+    <RelativeLayout
+        android:id="@+id/imgCirCleView"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerInParent="true"
+        android:background="@drawable/goldring">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgChair"
+            android:layout_width="50dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/black"
+            android:padding="@dimen/_12sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/chair_24" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <RelativeLayout
+            android:id="@+id/rlMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="@color/white">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgMic"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_baseline_mic_24" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgCirCleView"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:textAlignment="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+</RelativeLayout>

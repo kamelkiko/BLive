@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <color name="purple">#FF3700B3</color>
+    <color name="colorlight">#eaf4ff</color>
+    <color name="golden_color">#bd9a5f</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="app_color">#00AEEF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="quantum_orange">#ff9800</color>
+    <color name="bg_color">#efefef</color>
+    <color name="app_pink_color">#00AEEF</color>
+    <color name="status_bar">#9F1C71</color>
+    <color name="orange">#f0569c</color>
+    <color name="dark_grey">#686464</color>
+    <color name="view_color">#ebebeb</color>
+    <color name="grey">#DCCAC4C4</color>
+    <color name="transdark">#e11b22</color>
+    <color name="lightgrey">#E3E2E2</color>
+    <color name="light_green">#78c2b5</color>
+    <color name="platinum">#EA621E</color>
+    <color name="ywllow_orange">#bf7f10</color>
+    <color name="app_light_pink_color">#ef7ec0</color>
+    <color name="light_black">#343539</color>
+    <color name="trans">#6AECECEC</color>
+    <color name="greeni">#1cd28b</color>
+
+    <color name="colorPrimary">#00AEEF</color>
+
+    <color name="colorPrimaryDark">#210D4C</color>
+    <color name="colorAccent">@color/progressBarColor</color>
+
+
+    <color name="progressBarColor">#8A0808</color>
+
+    <!--TODO button and editText Inner color -->
+    <color name="editTextInnerColor">#F0B50D0D</color>
+    <color name="yellow">#E800D1</color>
+
+    <!--TODO Text hint color in edit text -->
+    <color name="hintColor">#DADADA</color>
+
+    <color name="LoginSingupProgressColor">#D3D3D3</color>
+
+    <!--TODO Background Inner color -->
+    <color name="home_background_color">#EDD8B1</color>
+    <!--TODO Background Outer color -->
+    <color name="home_background_stock_color">#D8BB85</color>
+
+    <color name="pink">#971A90</color>
+    <color name="red">#AF152C</color>
+    <color name="green">#1C9718</color>
+    <color name="brown">#B63930</color>
+    <color name="dark_bule">#411F80</color>
+    <color name="of_dark_bule">#AD411F80</color>
+    <color name="yellow_spin">#DA8303</color>
+
+    <color name="dark_green">#21C392</color>
+    <color name="light_orange">#F9D162</color>
+    <color name="blue">#0A5688</color>
+
+
+    <color name="cotext">#747474</color>
+    <color name="cotextred">#F76D6D</color>
+
+
+    <color name="transparent">#00F9F9FA</color>
+
+    <color name="tint">#DC0C2653</color>
+    <color name="tint2">#B9FFFFFF</color>
+    <color name="cardview_shadow_start_color">#59767880</color>
+
+
+    <color name="background">#D514192C</color>
+
+    <color name="__picker_common_primary">#ffe1e1e1</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+
+    <color name="ball1">#ffffd91c</color>
+    <color name="ball2">#ffff4b4a</color>
+    <color name="ball3">#ff3d8eff</color>
+    <color name="blue_selected">#ff349efe</color>
+
+    <color name="browser_actions_bg_grey">#fff5f5f5</color>
+    <color name="browser_actions_divider_color">#1e000000</color>
+    <color name="browser_actions_text_color">#de000000</color>
+    <color name="browser_actions_title_color">#ff646464</color>
+
+    <color name="colorText">#ffffffff</color>
+
+    <color name="cropiwa_default_border_color">#fff5f5f5</color>
+    <color name="cropiwa_default_corner_color">#fff5f5f5</color>
+    <color name="cropiwa_default_grid_color">#ffffffff</color>
+    <color name="cropiwa_default_overlay_color">#af000000</color>
+    <color name="dark_grey_more">#ff232323</color>
+
+    <color name="gnt_ad_green">#ff3a6728</color>
+
+    <color name="loader_defalut">#44ffffff</color>
+    <color name="loader_selected">#ffffffff</color>
+
+    <color name="overlay_background_4">#a4ffffff</color>
+
+    <color name="progress_bar_bg_light">#ff787878</color>
+
+    <color name="text_second">#ff888893</color>
+    <color name="tool_bg">#ff303030</color>
+
+    <color name="unselected_color">#ff7d7d7d</color>
+    <color name="white_blur">#ffc8c8c8</color>
+    <color name="round_corners_26dp">#14F6D3A7</color>
+
+    <color name="level_round">#9EE37D80</color>
+</resources>

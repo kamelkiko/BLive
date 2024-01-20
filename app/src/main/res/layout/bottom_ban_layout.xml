@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/dp_20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_cancel"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/ic_cancel_anus" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/setAsAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/dp_5"
+
+        android:paddingVertical="@dimen/dp_5"
+        android:text="@string/set_as_admin"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/dp_5"
+
+        android:paddingVertical="@dimen/dp_5"
+
+        android:text="@string/mute"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/kickOutUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp_5"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp_5"
+        android:text="kick Out User"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/addBlockList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/dp_5"
+
+        android:paddingVertical="@dimen/dp_5"
+
+        android:text="@string/add_to_black_list"
+        android:textSize="16sp" />
+
+</LinearLayout>

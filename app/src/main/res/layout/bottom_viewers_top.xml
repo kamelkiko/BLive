@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/llUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp_10"
+
+            android:text="Gifters"
+            android:textColor="@color/app_pink_color"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/viewUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_4"
+            android:background="@color/app_pink_color" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_gifter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llUser">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewersGifts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/list_gifters_top" />
+
+        <TextView
+            android:id="@+id/txtNoGifts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/beauty_level_info_bg_white"
+            android:padding="@dimen/dp_10"
+            android:text="No  Gifts"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
